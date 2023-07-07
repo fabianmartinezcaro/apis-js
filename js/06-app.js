@@ -11,11 +11,11 @@ function ejecutarSpeechAPI(){
 
     recognition.onstart = function () {
         salida.classList.add('mostrar');
-        salida.textContent = 'Escuchando...'
+        salida.textContent = 'Escuchando...';
     }
 
     recognition.onspeechend = function () {
-        salida.textContent = 'Se dejo de grabar...'
+        salida.textContent = 'Se dejo de grabar...';
         recognition.stop();
     }
 
